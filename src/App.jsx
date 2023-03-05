@@ -5,6 +5,8 @@ import img3 from '../assets/3-Ground.png';
 import img4 from '../assets/2-Ground.png';
 import img5 from '../assets/1-Ground.png';
 import img6 from '../assets/Logo.png';
+import Video from './Video';
+import NavBar from './NavBar.jsx';
 
 function App() {
   const paralStyle = {
@@ -15,29 +17,47 @@ function App() {
     backgroundPosition: 'center',
   };
 
+  const videoStyle = {
+    display: 'flex',
+    justifyContent: 'center',
+    width: '70%',
+    height: '40%',
+    position: 'absolute',
+    left: '15%',
+    right: '15%'
+  };
+
 
   return (
     <div>
       <Parallax pages={2} config={{ tension: 0, friction: 0 }} >
-        <ParallaxLayer speed={-.2}>
+        <ParallaxLayer speed={0}>
           <div style={paralStyle}></div>
         </ParallaxLayer>
-        <ParallaxLayer speed={-.2}>
-          <div style={{ ...paralStyle, backgroundImage: `url(${img6})` }}></div>
-        </ParallaxLayer>
-        <ParallaxLayer speed={-.1}>
+        <ParallaxLayer speed={-.55}>
           <div style={{ ...paralStyle, backgroundImage: `url(${img2})` }}></div>
         </ParallaxLayer>
-        <ParallaxLayer speed={.1}>
+        <ParallaxLayer speed={-.4}>
           <div style={{ ...paralStyle, backgroundImage: `url(${img3})` }}></div>
         </ParallaxLayer>
-        <ParallaxLayer speed={.3}>
+        <ParallaxLayer speed={-.65}>
+          <div style={{ ...paralStyle, backgroundImage: `url(${img6})` }}></div>
+        </ParallaxLayer>
+        <ParallaxLayer speed={-.2}>
           <div style={{ ...paralStyle, backgroundImage: `url(${img4})` }}></div>
         </ParallaxLayer>
-        <ParallaxLayer speed={.6}>
+        <ParallaxLayer>
           <div style={{ ...paralStyle, backgroundImage: `url(${img5})` }}></div>
         </ParallaxLayer>
-        <div style={{ height: '100vh' }}></div>
+        <ParallaxLayer offset={.8}>
+          <div style={{ backgroundColor: 'grey', height: '100vh' }} />
+        </ParallaxLayer>
+        <ParallaxLayer offset={.9} style={videoStyle}>
+          <Video /> 
+        </ParallaxLayer>
+        <ParallaxLayer offset={0}>
+          <NavBar />
+        </ParallaxLayer>
       </Parallax>
     </div>
   );
