@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import './index.css';
+import {BrowserRouter} from 'react-router-dom';
 
 ReactDOM.render(
-  <div style={{ display: 'flex', flexDirection: 'column' }}>
+  <BrowserRouter>
     <App />
-  </div>,
+  </BrowserRouter>,
   document.getElementById('root')
 );

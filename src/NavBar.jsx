@@ -1,18 +1,15 @@
 import React from 'react';
 
-function NavBar() {
   const navStyle = {
-    letterSpacing: '2px',
+    letterSpacing: '1px',
     fontWeight: '700',
     textTransform: 'uppercase',
-    fontSize: '2em',
+    fontSize: '1.5em',
     position: 'absolute',
     top: '7%',
     right: '5%',
     display: 'flex',
-    justifyContent: 'center',
     listStyle: 'none',
-    marginLeft: '35px',
   };
 
   const buttonStyle = {
@@ -20,9 +17,11 @@ function NavBar() {
     background: 'white',
     padding: '10px',
     color: '#20782f',
-    borderRadius: '30px',
+    borderRadius: '25px',
+    marginRight: '15px',
   };
 
+function NavBar() {
   return (
     <nav>
       <ul style={navStyle}>
@@ -32,7 +31,9 @@ function NavBar() {
         <li>
           <a style={buttonStyle} href='/news'>News</a>
         </li>
-        <li style={buttonStyle}>Button 3</li>
+        <li>
+          <a style={buttonStyle} href ='/dashboard'>Get Started</a>
+        </li>
       </ul>
     </nav>
   );
