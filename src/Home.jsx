@@ -9,24 +9,6 @@ import img6 from '../assets/Logo.png';
 import Video from './Video';
 import NavBar from './NavBar.jsx';
 
-const paralStyle = {
-  height: '90vh',
-  backgroundImage: `url(${img1})`,
-  backgroundRepeat: 'repeat-x',
-  backgroundSize: 'auto 100%',
-  backgroundPosition: 'center',
-};
-
-const videoStyle = {
-  display: 'flex',
-  justifyContent: 'center',
-  width: '70%',
-  height: '40%',
-  position: 'absolute',
-  left: '15%',
-  right: '15%'
-};
-
 function Home() {
   return (
     <div>
@@ -67,5 +49,23 @@ function Home() {
     </div>
   );
 }
+
+const paralStyle = {
+  height: '90vh',
+  backgroundImage: `url(${img1})`,
+  backgroundRepeat: 'repeat-x',
+  backgroundSize: 'auto 100%',
+  backgroundPosition: 'center',
+};
+
+const videoStyle = {
+  display: 'flex',
+  justifyContent: 'center',
+  width: '70%',
+  height: '40%',
+  position: 'absolute',
+  left: '15%',
+  right: '15%'
+};
 
 export default Home;
