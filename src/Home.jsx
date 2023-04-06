@@ -8,11 +8,12 @@ import img7 from '../assets/0-Ground.png';
 import img6 from '../assets/Logo.png';
 import Video from './Video';
 import NavBar from './NavBar.jsx';
+import ContactUs from './ContactUs'
 
 function Home() {
   return (
     <div>
-      <Parallax pages={2} config={{ tension: 0, friction: 0 }} >
+      <Parallax pages={2.5} config={{ tension: 0, friction: 0 }} >
         <ParallaxLayer speed={0}>
           <div style={paralStyle}></div>
         </ParallaxLayer>
@@ -45,6 +46,9 @@ function Home() {
         <ParallaxLayer offset={0}>
           <NavBar />
         </ParallaxLayer>
+        <ParallaxLayer offset={2}>
+          <ContactUs />
+        </ParallaxLayer>
       </Parallax>
     </div>
   );
@@ -61,8 +65,8 @@ const paralStyle = {
 const videoStyle = {
   display: 'flex',
   justifyContent: 'center',
-  width: '70%',
-  height: '40%',
+  width: '1000px',
+  height: '400px',
   position: 'absolute',
   left: '15%',
   right: '15%'

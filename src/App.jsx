@@ -5,7 +5,9 @@ import Forum from './Forum'
 import Dashboard from './Dashboard'
 import Login from './Login'
 import Register from './Register'
+import ContactUs from './ContactUs'
 import {Routes, Route} from 'react-router-dom';
+
 
 const App = () => {
   return (
@@ -17,6 +19,7 @@ const App = () => {
         <Route path='/dashboard' element={<Dashboard/>} />
         <Route path='/login' element={<Login/>} />
         <Route path='/register' element={<Register/>} />
+        <Route path='/contactus' element={<ContactUs/>} />
       </Routes>
     </>
     

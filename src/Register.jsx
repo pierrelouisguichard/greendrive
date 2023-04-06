@@ -28,7 +28,7 @@ const container = {
     width: '100vw',
     fontFamily: 'Bahnschrift, sans-serif',
     color: 'white',
-    fontSize: '12px',
+    fontSize: '14px',
   }
 
   const position = {
@@ -42,7 +42,7 @@ const rectangle = {
     backgroundColor: '#035F48',
     borderRadius: '10px',
     width: '400px', 
-    height: '650px',
+    height: '700px',
 }
 
 const title = {
@@ -76,7 +76,7 @@ const registerButton = {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    top: '87%'
+    top: '88%'
   };
 
 export default Register
