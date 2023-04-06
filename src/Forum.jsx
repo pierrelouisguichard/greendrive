@@ -1,9 +1,18 @@
 import React from 'react'
 
-const Forum = () => {
+function Forum() {
   return (
-    <div>Forum</div>
+    <div style={container}>
+      Forum
+    </div>
   )
+}
+
+const container = {
+  color: 'white',
+  backgroundColor: 'black',
+  height: '100vh',
+  width: '100vw',
 }
 
 export default Forum

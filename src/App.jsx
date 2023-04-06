@@ -6,6 +6,7 @@ import Dashboard from './Dashboard'
 import Login from './Login'
 import Register from './Register'
 import ContactUs from './ContactUs'
+import Video from './Video'
 import {Routes, Route} from 'react-router-dom';
 
 
@@ -20,6 +21,7 @@ const App = () => {
         <Route path='/login' element={<Login/>} />
         <Route path='/register' element={<Register/>} />
         <Route path='/contactus' element={<ContactUs/>} />
+        <Route path='/video' element={<Video/>} />
       </Routes>
     </>
     

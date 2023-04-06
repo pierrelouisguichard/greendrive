@@ -61,7 +61,7 @@ const textFields = {
     backgroundColor: 'rgb(0,0,0,0)',
     width: '299px',
     border: 'none',
-    borderBottom: '3px solid white',
+    borderBottom: '2px solid white',
 }
 
 const registerButton = {
