@@ -41,7 +41,7 @@ function ContactUs() {
 
 const line = {
   width: "70vw",
-  height: ".2vh",
+  height: "2px",
   top: "43%",
   backgroundColor: "#024A39",
 };

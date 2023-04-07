@@ -20,7 +20,7 @@ function Video() {
 }
 
 const container = {
-  backgroundColor: "grey",
+  backgroundColor: "#c8c8c8",
   height: "80vh",
   width: "100vw",
 };
@@ -28,7 +28,7 @@ const container = {
 const position = {
   position: "absolute",
   height: "70%",
-  width: "70%",
+  width: "65%",
   top: "40%",
   left: "50%",
   transform: "translate(-50%, -50%)",

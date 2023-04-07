@@ -9,11 +9,13 @@ import img6 from "../assets/Logo.png";
 import Video from "./Video";
 import NavBar from "./NavBar.jsx";
 import ContactUs from "./ContactUs";
+import OurImpact from "./OurImpact";
+import Advantages from "./Advantages";
 
 function Home() {
   return (
     <>
-      <Parallax pages={3} config={{ tension: 0, friction: 0 }}>
+      <Parallax pages={2.85} config={{ tension: 0, friction: 0 }}>
         <ParallaxLayer offset={0}>
           <NavBar />
         </ParallaxLayer>
@@ -39,12 +41,15 @@ function Home() {
           <div style={{ ...paralStyle, backgroundImage: `url(${img7})` }}></div>
         </ParallaxLayer>
         <ParallaxLayer offset={0.89}>
-          <div style={{ backgroundColor: "#035F48", height: "120vh" }}></div>
+          <OurImpact />
         </ParallaxLayer>
-        <ParallaxLayer offset={1.5}>
+        <ParallaxLayer offset={1.25}>
           <Video />
         </ParallaxLayer>
-        <ParallaxLayer offset={2.5}>
+        <ParallaxLayer offset={2.05}>
+          <Advantages />
+        </ParallaxLayer>
+        <ParallaxLayer offset={2.35}>
           <ContactUs />
         </ParallaxLayer>
       </Parallax>

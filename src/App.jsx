@@ -1,4 +1,5 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import News from "./News";
 import Forum from "./Forum";
@@ -7,7 +8,8 @@ import Login from "./Login";
 import Register from "./Register";
 import ContactUs from "./ContactUs";
 import Video from "./Video";
-import { Routes, Route } from "react-router-dom";
+import OurImpact from "./OurImpact";
+import Advantages from "./Advantages";
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/video" element={<Video />} />
+        <Route path="/ourimpact" element={<OurImpact />} />
+        <Route path="/advantages" element={<Advantages />} />
       </Routes>
     </>
   );
