@@ -1,12 +1,37 @@
-import React from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-const Video = () => {
-    return (
-        <div className="ratio ratio-16x9">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/xcJtL7QggTI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-        </div>
-    )
+function Video() {
+  return (
+    <div style={container}>
+      <div className="ratio ratio-16x9" style={position}>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/xcJtL7QggTI"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        ></iframe>
+      </div>
+    </div>
+  );
 }
 
-export default Video
+const container = {
+  backgroundColor: "grey",
+  height: "80vh",
+  width: "100vw",
+};
+
+const position = {
+  position: "absolute",
+  height: "70%",
+  width: "70%",
+  top: "40%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+};
+
+export default Video;
