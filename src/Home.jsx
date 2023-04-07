@@ -16,7 +16,7 @@ function Home() {
   return (
     <>
       <Parallax pages={2.85} config={{ tension: 0, friction: 0 }}>
-        <ParallaxLayer offset={0}>
+        <ParallaxLayer offset={0} style={{ position: "relative", zIndex: 10 }}>
           <NavBar />
         </ParallaxLayer>
         <ParallaxLayer speed={0}>

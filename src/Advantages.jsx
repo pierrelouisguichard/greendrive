@@ -37,7 +37,7 @@ function Advantages() {
         <b>Trustworthy</b> <br /> <br />
         GreenDrive partners with <br />
         feedback-rated mechanics <br />
-        for the best customer satisfaction
+        for the best customer satisfaction.
       </div>
       <div style={{ ...position, left: "60vw" }}>
         <b>Great Prices</b> <br /> <br />
