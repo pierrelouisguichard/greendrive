@@ -27,7 +27,7 @@ const container = {
 
 const position = {
   position: "absolute",
-  height: "70%",
+  height: "65%",
   width: "65%",
   top: "40%",
   left: "50%",
