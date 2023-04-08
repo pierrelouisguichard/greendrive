@@ -1,10 +1,19 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMoneyBillTrendUp } from "@fortawesome/free-solid-svg-icons";
 
 function CostTracker() {
   return (
     <div style={container}>
       <div style={pill}></div>
-      <p style={position}>Cost Tracker</p>
+      <p style={position}>
+        <FontAwesomeIcon
+          icon={faMoneyBillTrendUp}
+          size="xl"
+          style={{ marginRight: "15px" }}
+        />
+        Cost Tracker
+      </p>
     </div>
   );
 }
@@ -12,7 +21,7 @@ function CostTracker() {
 const position = {
   position: "absolute",
   top: "47px",
-  left: "90px",
+  left: "80px",
 };
 
 const container = {
@@ -31,7 +40,7 @@ const container = {
 
 const pill = {
   backgroundColor: "#72A599",
-  width: "18px",
+  width: "15px",
   height: "40px",
   borderRadius: "20px",
   position: "absolute",
