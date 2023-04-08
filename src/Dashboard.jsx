@@ -1,14 +1,20 @@
 import React from "react";
+import SideMenu from "./SideMenu";
+import TopMessage from "./TopMessage";
+import Gallery from "./Gallery";
+import CostTracker from "./CostTracker";
+import ProgressTracker from "./ProgressTracker";
 
-function GetStarted() {
-  return <div style={container}>Dashboard</div>;
+function Dashboard() {
+  return (
+    <div>
+      <Gallery />
+      <TopMessage />
+      <SideMenu />
+      <CostTracker />
+      <ProgressTracker />
+    </div>
+  );
 }
 
-const container = {
-  color: "white",
-  backgroundColor: "black",
-  height: "100vh",
-  width: "100vw",
-};
-
-export default GetStarted;
+export default Dashboard;

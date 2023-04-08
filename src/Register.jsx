@@ -32,7 +32,7 @@ function Register() {
           type="password"
           style={{ ...position, ...textFields, top: "76%" }}
         ></input>
-        <a style={{ ...position, ...registerButton }} href="/">
+        <a style={{ ...position, ...registerButton }} href="/login">
           Register
         </a>
       </div>

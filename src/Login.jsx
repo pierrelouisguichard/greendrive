@@ -79,7 +79,7 @@ function Login() {
           <button style={{ ...position, ...LoginButton }}>Login</button>
         </form>
         <div style={{ ...position, ...titles, top: "50%" }}>Password</div>
-        <a style={forgotPassword} href="/">
+        <a style={forgotPassword} href="/dashboard">
           Forgot password?
         </a>
         <a style={{ ...position, ...registerButton }} href="/register">

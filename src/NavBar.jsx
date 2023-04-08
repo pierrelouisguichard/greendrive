@@ -15,7 +15,7 @@ function NavBar() {
           </a>
         </li>
         <li>
-          <a style={buttonStyle} href="/dashboard">
+          <a style={buttonStyle} href="/login">
             Get Started
           </a>
         </li>

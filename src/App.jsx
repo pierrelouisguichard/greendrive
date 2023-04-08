@@ -1,5 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import { AuthProvider } from "./context/AuthProvider";
 import Home from "./Home";
 import News from "./News";
 import Forum from "./Forum";
@@ -11,7 +12,8 @@ import Video from "./Video";
 import OurImpact from "./OurImpact";
 import Advantages from "./Advantages";
 import NavBar from "./NavBar";
-import { AuthProvider } from "./context/AuthProvider";
+import TopMessage from "./TopMessage";
+import Gallery from "./Gallery";
 
 function App() {
   return (
@@ -29,6 +31,8 @@ function App() {
           <Route path="/ourimpact" element={<OurImpact />} />
           <Route path="/advantages" element={<Advantages />} />
           <Route path="/navbar" element={<NavBar />} />
+          <Route path="/topmessage" element={<TopMessage />} />
+          <Route path="/gallery" element={<Gallery />} />
         </Routes>
       </AuthProvider>
     </>
