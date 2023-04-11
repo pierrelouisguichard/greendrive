@@ -31,7 +31,6 @@ function App() {
           <Route path="/ourimpact" element={<OurImpact />} />
           <Route path="/advantages" element={<Advantages />} />
           <Route path="/navbar" element={<NavBar />} />
-          <Route path="/topmessage" element={<TopMessage />} />
           <Route path="/gallery" element={<Gallery />} />
         </Routes>
       </AuthProvider>
