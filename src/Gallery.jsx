@@ -1,10 +1,19 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faImages } from "@fortawesome/free-solid-svg-icons";
 
 function Gallery() {
   return (
     <div style={container}>
       <div style={pill}></div>
-      <p style={position}>Gallery</p>
+      <p style={position}>
+        <FontAwesomeIcon
+          icon={faImages}
+          size="xl"
+          style={{ marginRight: "15px" }}
+        />
+        Gallery
+      </p>
     </div>
   );
 }
@@ -12,7 +21,7 @@ function Gallery() {
 const position = {
   position: "absolute",
   top: "47px",
-  left: "90px",
+  left: "80px",
 };
 
 const container = {
@@ -31,7 +40,7 @@ const container = {
 
 const pill = {
   backgroundColor: "#72A599",
-  width: "18px",
+  width: "15px",
   height: "40px",
   borderRadius: "20px",
   position: "absolute",

@@ -76,7 +76,7 @@ function Login() {
             required
             style={{ ...position, ...textFields, top: "60%" }}
           ></input>
-          <button style={{ ...position, ...LoginButton }}>Login</button>
+          <button style={{ ...position, ...LoginButton }}>Login </button>
         </form>
         <div style={{ ...position, ...titles, top: "50%" }}>Password</div>
         <a style={forgotPassword} href="/dashboard">
