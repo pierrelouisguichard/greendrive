@@ -29,9 +29,12 @@ function ContactUs() {
       <div style={{ ...position, transform: "none", top: "24%" }}>Message</div>
       <input
         type="text"
-        style={{ ...position, ...textFields, top: "28%", height: "8%" }}
+        style={{ ...position, ...textFields, top: "28%", height: "6%" }}
       ></input>
       <div style={{ ...position, ...line }}></div>
+      <a style={{ ...position, ...button }} href="/">
+        Submit
+      </a>
       <div style={{ ...position, top: "47%" }}>
         Copyright © 2023 All Rights Reserved
       </div>
@@ -75,6 +78,22 @@ const textFields = {
   border: "none",
   borderBottom: "2px solid white",
   transform: "none",
+};
+
+const button = {
+  textDecoration: "none",
+  width: "299px",
+  height: "45px",
+  background: "white",
+  borderRadius: "3px",
+  color: "#035F48",
+  fontSize: "20px",
+  fontWeight: "bold",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  left: "78%",
+  top: "39%",
 };
 
 export default ContactUs;

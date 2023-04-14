@@ -1,7 +1,14 @@
 import React from "react";
+import Button from "react-bootstrap/Button";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Slider from "./Slider";
 
 function News() {
-  return <div style={container}>News</div>;
+  return (
+    <div style={container}>
+      <Slider />
+    </div>
+  );
 }
 
 const container = {
