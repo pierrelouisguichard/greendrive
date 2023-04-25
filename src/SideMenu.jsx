@@ -9,27 +9,33 @@ function SideMenu() {
           <img src={smalllogo} style={{ ...position, ...logo }} />
         </a>
         <p style={{ ...position, top: "30%", left: "4%" }}>Vehicles:</p>
-        <p
+        <a
           style={{
             ...position,
             top: "35%",
             fontWeight: "normal",
             fontSize: "18px",
+            color: "white",
+            textDecoration: "none",
           }}
+          href="/error"
         >
           BMW E30
-        </p>
-        <p
+        </a>
+        <a
           style={{
             ...position,
             top: "40%",
             fontWeight: "normal",
             fontSize: "18px",
+            color: "white",
+            textDecoration: "none",
           }}
+          href="/error"
         >
           Volvo XC40
-        </p>
-        <a style={{ ...position, ...button1 }} href="/">
+        </a>
+        <a style={{ ...position, ...button1 }} href="/error">
           Convert a New Vehicle
         </a>
         <a style={{ ...position, ...button2 }} href="/">

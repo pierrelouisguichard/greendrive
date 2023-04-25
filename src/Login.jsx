@@ -1,59 +1,6 @@
 import React from "react";
-import { useRef, useState, useEffect, useContext } from "react";
-import AuthContext from "./context/AuthProvider";
-import axios from "./api/axios";
-const LOGIN_URL = "/auth";
 
 function Login() {
-  const { setAuth } = useContext(AuthContext);
-  const userRef = useRef();
-  const errRef = useRef();
-
-  const [user, setUser] = useState("");
-  const [pwd, setPwd] = useState("");
-  const [errMsg, setErrMsg] = useState("");
-  const [success, setSucces] = useState(false);
-
-  useEffect(() => {
-    userRef.current.focus();
-  }, []);
-
-  useEffect(() => {
-    setErrMsg("");
-  }, [user, pwd]);
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const response = await axios.post(
-        LOGIN_URL,
-        JSON.stringify({ user, pwd }),
-        {
-          headers: { "Content-Type": "application/json" },
-          withCredentials: true,
-        }
-      );
-      console.log(JSON.stringify(response?.data));
-      const accessToken = response?.data?.accessToken;
-      const roles = response?.data?.roles;
-      setAuth({ user, pwd, roles, accessToken });
-      setUser("");
-      setPwd("");
-      setSuccess(true);
-    } catch (err) {
-      if (!err?.response) {
-        setErrMsg("No Server Response");
-      } else if (err.response?.status === 400) {
-        setErrMsg("Missing Email or Password");
-      } else if (err.response?.status === 400) {
-        setErrMsg("Unauthorized");
-      } else {
-        setErrMsg("Login Failed");
-      }
-      errRef.current.focus();
-    }
-  };
-
   return (
     <div style={container}>
       <div style={{ ...position, ...rectangle }}>
@@ -62,24 +9,20 @@ function Login() {
         <form>
           <input
             type="text"
-            ref={userRef}
-            onChange={(e) => setUser(e.target.value)}
-            value={user}
-            autoComplete="off"
             required
             style={{ ...position, ...textFields, top: "40%" }}
           ></input>
           <input
             type="password"
-            onChange={(e) => setPwd(e.target.value)}
-            value={pwd}
             required
             style={{ ...position, ...textFields, top: "60%" }}
           ></input>
-          <button style={{ ...position, ...LoginButton }}>Login </button>
+          <a style={{ ...position, ...LoginButton }} href="/dashboard">
+            Login{" "}
+          </a>
         </form>
         <div style={{ ...position, ...titles, top: "50%" }}>Password</div>
-        <a style={forgotPassword} href="/dashboard">
+        <a style={forgotPassword} href="/error">
           Forgot password?
         </a>
         <a style={{ ...position, ...registerButton }} href="/register">
