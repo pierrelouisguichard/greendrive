@@ -59,7 +59,7 @@ function Login() {
       <div style={{ ...position, ...rectangle }}>
         <div style={{ ...position, ...title }}>Login</div>
         <div style={{ ...position, ...titles, top: "30%" }}>Email</div>
-        <form onSubmit={handleSubmit}>
+        <form>
           <input
             type="text"
             ref={userRef}

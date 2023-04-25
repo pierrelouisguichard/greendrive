@@ -12,8 +12,9 @@ import Video from "./Video";
 import OurImpact from "./OurImpact";
 import Advantages from "./Advantages";
 import NavBar from "./NavBar";
-import TopMessage from "./TopMessage";
 import Gallery from "./Gallery";
+import Error from "./Error";
+import SecNav from "./SecNav";
 
 function App() {
   return (
@@ -32,6 +33,8 @@ function App() {
           <Route path="/advantages" element={<Advantages />} />
           <Route path="/navbar" element={<NavBar />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/error" element={<Error />} />
+          <Route path="/secnav" element={<SecNav />} />
         </Routes>
       </AuthProvider>
     </>

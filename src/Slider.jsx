@@ -15,7 +15,9 @@ function Slider() {
             affordable if mass adoption is to be achieved on the road to net
             zero
           </p>
-          <Button variant="secondary">Read more</Button>{" "}
+          <Button href="/error" style={button}>
+            Read more
+          </Button>{" "}
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item style={{ ...itemStyle, backgroundImage: `url(${img4})` }}>
@@ -25,14 +27,18 @@ function Slider() {
             There are LOTS of electric vehicles that are due to come to market
             in the near future.
           </p>
-          <Button variant="secondary">Read more</Button>{" "}
+          <Button href="/error" style={button}>
+            Read more
+          </Button>{" "}
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item style={{ ...itemStyle, backgroundImage: `url(${img5})` }}>
         <Carousel.Caption style={caption}>
           <h1>Powering ahead</h1>
           <p>Six new ways to charge an electric car</p>
-          <Button variant="secondary">Read more</Button>{" "}
+          <Button href="/error" style={button}>
+            Read more
+          </Button>{" "}
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
@@ -51,6 +57,14 @@ const itemStyle = {
   backgroundRepeat: "repeat-x",
   backgroundSize: "auto 100%",
   backgroundPosition: "center",
+};
+
+const button = {
+  backgroundColor: "#035F48",
+  border: "none",
+  borderWidth: "2px",
+  fontSize: "18px",
+  padding: "8px 25px",
 };
 
 const caption = {

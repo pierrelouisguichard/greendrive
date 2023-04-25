@@ -39,10 +39,9 @@ const navStyle = {
 const buttonStyle = {
   textDecoration: "none",
   background: "white",
-  padding: "10px",
+  padding: "8px 15px",
   color: "#20782f",
-  borderRadius: "25px",
+  borderRadius: "15px",
   marginRight: "15px",
 };
-
 export default NavBar;
