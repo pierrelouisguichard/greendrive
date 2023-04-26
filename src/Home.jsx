@@ -6,11 +6,11 @@ import img4 from "../assets/2-Ground.png";
 import img5 from "../assets/1-Ground.png";
 import img7 from "../assets/0-Ground.png";
 import img6 from "../assets/Logo.png";
-import Video from "./Video";
-import NavBar from "./NavBar.jsx";
-import ContactUs from "./ContactUs";
-import OurImpact from "./OurImpact";
-import Advantages from "./Advantages";
+import Video from "./HomeComponents/Video";
+import NavBar from "./HomeComponents/NavBar.jsx";
+import ContactUs from "./HomeComponents/ContactUs";
+import OurImpact from "./HomeComponents/OurImpact";
+import Advantages from "./HomeComponents/Advantages";
 
 function Home() {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import smalllogo from "../assets/smalllogo.png";
+import smalllogo from "../../assets/smalllogo.png";
 
 function SideMenu() {
   return (

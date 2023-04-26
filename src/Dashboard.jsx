@@ -1,9 +1,9 @@
 import React from "react";
-import SideMenu from "./SideMenu";
-import TopMessage from "./TopMessage";
-import Gallery from "./Gallery";
-import CostTracker from "./CostTracker";
-import ProgressTracker from "./ProgressTracker";
+import SideMenu from "./DashboardComponents/SideMenu";
+import TopMessage from "./DashboardComponents/TopMessage";
+import Gallery from "./DashboardComponents/Gallery";
+import CostTracker from "./DashboardComponents/CostTracker";
+import ProgressTracker from "./DashboardComponents/ProgressTracker";
 
 function Dashboard() {
   return (

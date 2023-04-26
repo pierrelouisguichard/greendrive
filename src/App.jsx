@@ -4,16 +4,16 @@ import Home from "./Home";
 import News from "./News";
 import Forum from "./Forum";
 import Dashboard from "./Dashboard";
-import Login from "./Login";
-import Register from "./Register";
-import ContactUs from "./ContactUs";
-import Video from "./Video";
-import OurImpact from "./OurImpact";
-import Advantages from "./Advantages";
-import NavBar from "./NavBar";
-import Gallery from "./Gallery";
-import Error from "./Error";
-import SecNav from "./SecNav";
+import Login from "./OtherComponents/Login";
+import Register from "./OtherComponents/Register";
+import ContactUs from "./HomeComponents/ContactUs";
+import Video from "./HomeComponents/Video";
+import OurImpact from "./HomeComponents/OurImpact";
+import Advantages from "./HomeComponents/Advantages";
+import NavBar from "./HomeComponents/NavBar";
+import Gallery from "./DashboardComponents/Gallery";
+import Error from "./OtherComponents/Error";
+import SecNav from "./NewsComponents/SecNav";
 
 function App() {
   return (

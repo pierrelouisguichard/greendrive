@@ -1,6 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Slider from "./Slider";
+import Slider from "./ForumComponents/Slider";
 
 function News() {
   return (
