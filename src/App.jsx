@@ -13,7 +13,7 @@ import Advantages from "./HomeComponents/Advantages";
 import NavBar from "./HomeComponents/NavBar";
 import Gallery from "./DashboardComponents/Gallery";
 import Error from "./OtherComponents/Error";
-import SecNav from "./NewsComponents/SecNav";
+import SecNav from "./ForumComponents/SecNav";
 
 function App() {
   return (

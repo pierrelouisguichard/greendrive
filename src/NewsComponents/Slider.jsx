@@ -1,7 +1,7 @@
 import Carousel from "react-bootstrap/Carousel";
-import img3 from "../assets/news1.jpg";
-import img4 from "../assets/news2.jpeg";
-import img5 from "../assets/news3.jpg";
+import img3 from "../../assets/news1.jpg";
+import img4 from "../../assets/news2.jpeg";
+import img5 from "../../assets/news3.jpg";
 import Button from "react-bootstrap/Button";
 
 function Slider() {
@@ -46,14 +46,14 @@ function Slider() {
 }
 
 const style = {
-  height: "100vh",
+  height: "90vh",
   fontFamily: "Bahnschrift, sans-serif",
   color: "white",
   fontSize: "20px",
 };
 
 const itemStyle = {
-  height: "100vh",
+  height: "90vh",
   backgroundRepeat: "repeat-x",
   backgroundSize: "auto 100%",
   backgroundPosition: "center",

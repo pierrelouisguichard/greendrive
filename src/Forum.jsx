@@ -2,7 +2,7 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faComment } from "@fortawesome/free-solid-svg-icons";
-import SecNav from "./NewsComponents/SecNav";
+import SecNav from "./ForumComponents/SecNav";
 
 const Forum = () => {
   return (
