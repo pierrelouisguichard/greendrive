@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChartSimple } from "@fortawesome/free-solid-svg-icons";
+import SplineChart from "./SplineChart";
 
 function ProgressTracker() {
   return (
@@ -14,6 +15,10 @@ function ProgressTracker() {
         />
         Progress Tracker
       </p>
+
+      <div>
+        <SplineChart />
+      </div>
     </div>
   );
 }

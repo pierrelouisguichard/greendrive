@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoneyBillTrendUp } from "@fortawesome/free-solid-svg-icons";
+import GaugeChart from "./GaugeChart";
 
 function CostTracker() {
   return (
@@ -12,8 +13,10 @@ function CostTracker() {
           size="xl"
           style={{ marginRight: "15px" }}
         />
-        Cost Tracker
       </p>
+      <div>
+        <GaugeChart />
+      </div>
     </div>
   );
 }
