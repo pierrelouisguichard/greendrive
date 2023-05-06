@@ -32,7 +32,6 @@ function App() {
         <Route path="/navbar" element={<NavBar />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/error" element={<Error />} />
-        <Route path="/secnav" element={<SecNav />} />
       </Routes>
     </>
   );
