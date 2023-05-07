@@ -1,41 +1,78 @@
-import React from "react";
+import Tab from "react-bootstrap/Tab";
+import Tabs from "react-bootstrap/Tabs";
 
 function Register() {
   return (
     <div style={container}>
-      <div style={{ ...position, ...rectangle }}>
-        <div style={{ ...position, ...title }}>Register</div>
-        <div style={{ ...position, ...titles, top: "21%" }}>First Name</div>
-        <input
-          type="text"
-          style={{ ...position, ...textFields, top: "28%" }}
-        ></input>
-        <div style={{ ...position, ...titles, top: "33%" }}>Last Name</div>
-        <input
-          type="text"
-          style={{ ...position, ...textFields, top: "40%" }}
-        ></input>
-        <div style={{ ...position, ...titles, top: "45%" }}>Email</div>
-        <input
-          type="text"
-          style={{ ...position, ...textFields, top: "52%" }}
-        ></input>
-        <div style={{ ...position, ...titles, top: "57%" }}>Password</div>
-        <input
-          type="password"
-          style={{ ...position, ...textFields, top: "64%" }}
-        ></input>
-        <div style={{ ...position, ...titles, top: "69%" }}>
-          Re-Enter Password
-        </div>
-        <input
-          type="password"
-          style={{ ...position, ...textFields, top: "76%" }}
-        ></input>
-        <a style={{ ...position, ...registerButton }} href="/login">
-          Register
-        </a>
-      </div>
+      <Tabs fill style={{ ...position, ...rectangle }}>
+        <Tab eventKey="home" title="User">
+          <div style={{ ...position, ...title }}>User Register</div>
+          <div style={{ ...position, ...titles, top: "34%" }}>First Name</div>
+          <input
+            type="text"
+            style={{ ...position, ...textFields, top: "38%" }}
+          ></input>
+          <div style={{ ...position, ...titles, top: "41%" }}>Last Name</div>
+          <input
+            type="text"
+            style={{ ...position, ...textFields, top: "45%" }}
+          ></input>
+          <div style={{ ...position, ...titles, top: "48%" }}>Email</div>
+          <input
+            type="text"
+            style={{ ...position, ...textFields, top: "52%" }}
+          ></input>
+          <div style={{ ...position, ...titles, top: "55%" }}>Password</div>
+          <input
+            type="password"
+            style={{ ...position, ...textFields, top: "59%" }}
+          ></input>
+          <div style={{ ...position, ...titles, top: "62%" }}>
+            Re-Enter Password
+          </div>
+          <input
+            type="password"
+            style={{ ...position, ...textFields, top: "66%" }}
+          ></input>
+          <a style={{ ...position, ...registerButton }} href="/login">
+            Register
+          </a>
+        </Tab>
+
+        <Tab eventKey="profile" title="Staff">
+          <div style={{ ...position, ...title }}>Staff Register</div>
+          <div style={{ ...position, ...titles, top: "34%" }}>First Name</div>
+          <input
+            type="text"
+            style={{ ...position, ...textFields, top: "38%" }}
+          ></input>
+          <div style={{ ...position, ...titles, top: "41%" }}>Last Name</div>
+          <input
+            type="text"
+            style={{ ...position, ...textFields, top: "45%" }}
+          ></input>
+          <div style={{ ...position, ...titles, top: "48%" }}>Email</div>
+          <input
+            type="text"
+            style={{ ...position, ...textFields, top: "52%" }}
+          ></input>
+          <div style={{ ...position, ...titles, top: "55%" }}>Password</div>
+          <input
+            type="password"
+            style={{ ...position, ...textFields, top: "59%" }}
+          ></input>
+          <div style={{ ...position, ...titles, top: "62%" }}>
+            Re-Enter Password
+          </div>
+          <input
+            type="password"
+            style={{ ...position, ...textFields, top: "66%" }}
+          ></input>
+          <a style={{ ...position, ...registerButton }} href="/login">
+            Register
+          </a>
+        </Tab>
+      </Tabs>
     </div>
   );
 }
@@ -66,13 +103,10 @@ const rectangle = {
 const title = {
   fontSize: "45px",
   fontWeight: "bold",
-  top: "13%",
+  top: "30%",
 };
 
-const titles = {
-  left: "12.5%",
-  transform: "none",
-};
+const titles = { transform: "translateX(-150px)" };
 
 const textFields = {
   color: "white",
@@ -94,7 +128,7 @@ const registerButton = {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  top: "88%",
+  top: "72%",
 };
 
 export default Register;

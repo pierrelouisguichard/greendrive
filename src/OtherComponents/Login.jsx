@@ -1,34 +1,63 @@
-import React from "react";
+import Tab from "react-bootstrap/Tab";
+import Tabs from "react-bootstrap/Tabs";
 
 function Login() {
   return (
     <div style={container}>
-      <div style={{ ...position, ...rectangle }}>
-        <div style={{ ...position, ...title }}>Login</div>
-        <div style={{ ...position, ...titles, top: "30%" }}>Email</div>
-        <form>
-          <input
-            type="text"
-            required
-            style={{ ...position, ...textFields, top: "40%" }}
-          ></input>
-          <input
-            type="password"
-            required
-            style={{ ...position, ...textFields, top: "60%" }}
-          ></input>
-          <a style={{ ...position, ...LoginButton }} href="/dashboard">
-            Login{" "}
+      <Tabs style={{ ...position, ...rectangle }} fill>
+        <Tab eventKey="home" title="User">
+          <div style={{ ...position, ...title }}>User Login</div>
+          <div style={{ ...position, ...titles, top: "41%" }}>Email</div>
+          <form>
+            <input
+              type="text"
+              required
+              style={{ ...position, ...textFields, top: "46%" }}
+            ></input>
+            <input
+              type="password"
+              required
+              style={{ ...position, ...textFields, top: "55%" }}
+            ></input>
+            <a style={{ ...position, ...LoginButton }} href="/dashboard">
+              Login{" "}
+            </a>
+          </form>
+          <div style={{ ...position, ...titles, top: "50%" }}>Password</div>
+          <a style={forgotPassword} href="/error">
+            Forgot password?
           </a>
-        </form>
-        <div style={{ ...position, ...titles, top: "50%" }}>Password</div>
-        <a style={forgotPassword} href="/error">
-          Forgot password?
-        </a>
-        <a style={{ ...position, ...registerButton }} href="/register">
-          Register
-        </a>
-      </div>
+          <a style={{ ...position, ...registerButton }} href="/register">
+            Register
+          </a>
+        </Tab>
+        <Tab eventKey="profile" title="Staff">
+          <div style={{ ...position, ...title }}>Staff Login</div>
+          <div style={{ ...position, ...titles, top: "41%" }}>Email</div>
+          <form>
+            <input
+              type="text"
+              required
+              style={{ ...position, ...textFields, top: "46%" }}
+            ></input>
+            <input
+              type="password"
+              required
+              style={{ ...position, ...textFields, top: "55%" }}
+            ></input>
+            <a style={{ ...position, ...LoginButton }} href="/dashboard">
+              Login{" "}
+            </a>
+          </form>
+          <div style={{ ...position, ...titles, top: "50%" }}>Password</div>
+          <a style={forgotPassword} href="/error">
+            Forgot password?
+          </a>
+          <a style={{ ...position, ...registerButton }} href="/register">
+            Register
+          </a>
+        </Tab>
+      </Tabs>
     </div>
   );
 }
@@ -46,9 +75,9 @@ const forgotPassword = {
   textDecoration: "none",
   color: "#72A699",
   position: "absolute",
-  top: "65%",
-  left: "75.5%",
-  transform: "translate(-50%, -50%)",
+  top: "56.5%",
+  left: "50%",
+  transform: "translateX(54px)",
   fontSize: "12px",
   fontWeight: "normal",
 };
@@ -70,12 +99,11 @@ const rectangle = {
 const title = {
   fontSize: "45px",
   fontWeight: "bold",
-  top: "18%",
+  top: "38%",
 };
 
 const titles = {
-  left: "12.5%",
-  transform: "none",
+  transform: "translateX(-150px)",
 };
 
 const textFields = {
@@ -98,7 +126,7 @@ const LoginButton = {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  top: "76%",
+  top: "61%",
   border: "none",
 };
 
@@ -107,7 +135,7 @@ const registerButton = {
   textDecoration: "none",
   fontSize: "20px",
   fontWeight: "bold",
-  top: "90%",
+  top: "66%",
 };
 
 export default Login;
