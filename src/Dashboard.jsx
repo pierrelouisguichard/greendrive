@@ -1,7 +1,7 @@
 import React from "react";
 import SideMenu from "./DashboardComponents/SideMenu";
 import TopMessage from "./DashboardComponents/TopMessage";
-import Gallery from "./DashboardComponents/Gallery";
+import Gallery from "./DashboardComponents/Photos";
 import CostTracker from "./DashboardComponents/CostTracker";
 import ProgressTracker from "./DashboardComponents/ProgressTracker";
 

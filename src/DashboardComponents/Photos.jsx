@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faImages } from "@fortawesome/free-solid-svg-icons";
 
-function Gallery() {
+function Photos() {
   return (
     <div style={container}>
       <div style={pill}></div>
@@ -48,4 +48,4 @@ const pill = {
   left: "50px",
 };
 
-export default Gallery;
+export default Photos;

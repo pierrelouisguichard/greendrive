@@ -7,14 +7,15 @@ function CostTracker() {
   return (
     <div style={container}>
       <div style={pill}></div>
-      <p style={position}>
+      <p style={{ ...position, top: "47%", left: "80px" }}>
         <FontAwesomeIcon
           icon={faMoneyBillTrendUp}
           size="xl"
           style={{ marginRight: "15px" }}
-        />
+        />{" "}
+        Cost Tracker
       </p>
-      <div>
+      <div style={position}>
         <GaugeChart />
       </div>
     </div>
@@ -23,8 +24,9 @@ function CostTracker() {
 
 const position = {
   position: "absolute",
-  top: "47px",
-  left: "80px",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
 };
 
 const container = {

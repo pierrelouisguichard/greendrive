@@ -12,7 +12,7 @@ import Video from "./HomeComponents/Video";
 import OurImpact from "./HomeComponents/OurImpact";
 import Advantages from "./HomeComponents/Advantages";
 import NavBar from "./HomeComponents/NavBar";
-import Gallery from "./DashboardComponents/Gallery";
+import Photos from "./DashboardComponents/Photos";
 import Error from "./OtherComponents/Error";
 
 function App() {
@@ -31,7 +31,7 @@ function App() {
         <Route path="/ourimpact" element={<OurImpact />} />
         <Route path="/advantages" element={<Advantages />} />
         <Route path="/navbar" element={<NavBar />} />
-        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/photos" element={<Photos />} />
         <Route path="/error" element={<Error />} />
       </Routes>
     </>
