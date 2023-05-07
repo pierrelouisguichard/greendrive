@@ -45,7 +45,7 @@ function Login() {
               required
               style={{ ...position, ...textFields, top: "55%" }}
             ></input>
-            <a style={{ ...position, ...LoginButton }} href="/dashboard">
+            <a style={{ ...position, ...LoginButton }} href="/staffdashboard">
               Login{" "}
             </a>
           </form>

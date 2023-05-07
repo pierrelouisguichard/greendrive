@@ -4,6 +4,7 @@ import Home from "./Home";
 import News from "./News";
 import Forum from "./Forum";
 import Dashboard from "./Dashboard";
+import StaffDashboard from "./StaffDashboard";
 import Login from "./OtherComponents/Login";
 import Register from "./OtherComponents/Register";
 import ContactUs from "./HomeComponents/ContactUs";
@@ -22,6 +23,7 @@ function App() {
         <Route path="/news" element={<News />} />
         <Route path="/forum" element={<Forum />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/staffdashboard" element={<StaffDashboard />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/contactus" element={<ContactUs />} />

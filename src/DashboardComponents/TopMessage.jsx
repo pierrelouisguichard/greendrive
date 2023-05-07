@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLeaf } from "@fortawesome/free-solid-svg-icons";
 
 function TopMessage() {
-  const name = "James";
+  const name = " ";
   return (
     <div style={container}>
       <p style={position}>

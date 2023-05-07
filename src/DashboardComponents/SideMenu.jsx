@@ -20,7 +20,7 @@ function SideMenu() {
           }}
           href="/error"
         >
-          BMW E30
+          - BMW E30
         </a>
         <a
           style={{
@@ -33,7 +33,7 @@ function SideMenu() {
           }}
           href="/error"
         >
-          Volvo XC40
+          - Volvo XC40
         </a>
         <a style={{ ...position, ...button1 }} href="/error">
           Convert a New Vehicle
