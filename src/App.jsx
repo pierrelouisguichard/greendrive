@@ -13,7 +13,7 @@ import Advantages from "./HomeComponents/Advantages";
 import NavBar from "./HomeComponents/NavBar";
 import Gallery from "./DashboardComponents/Gallery";
 import Error from "./OtherComponents/Error";
-import SecNav from "./ForumComponents/SecNav";
+import Test from "./OtherComponents/Test";
 
 function App() {
   return (
@@ -32,6 +32,7 @@ function App() {
         <Route path="/navbar" element={<NavBar />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/error" element={<Error />} />
+        <Route path="/test" element={<Test />} />
       </Routes>
     </>
   );
