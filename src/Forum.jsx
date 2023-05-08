@@ -132,7 +132,7 @@ const cardsContainer = {
 const container = {
   color: "black",
   backgroundColor: "#E6E6E6",
-  height: "130vh",
+  height: "150vh",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",

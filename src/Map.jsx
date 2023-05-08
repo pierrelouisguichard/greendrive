@@ -51,8 +51,7 @@ const textFieldStyles = {
   border: "none",
   borderBottom: "2px solid white",
   transform: "none",
-  top: "28%",
-  left: 20,
+  left: 45,
 };
 
 export default function Map() {
@@ -68,7 +67,7 @@ export default function Map() {
     <div>
       <div style={mapContainerStyles}>
         <GoogleMapReact
-          // bootstrapURLKeys={{ key: "" }}
+          // bootstrapURLKeys={{ ky: }}
           defaultCenter={defaultProps.center}
           defaultZoom={defaultProps.zoom}
         >
@@ -79,8 +78,40 @@ export default function Map() {
       <a href="/">
         <img src={smalllogo} alt="smalllogo" style={logo} />
       </a>
-      <div style={{ ...position, ...textFieldStyles }}>Message</div>
-      <input type="text" style={textFieldStyles}></input>
+      <div style={{ ...position, top: "20%", left: 130 }}>
+        Vehicle Manufacturer
+      </div>
+      <input type="text" style={{ ...textFieldStyles, top: "24%" }}></input>
+      <div style={{ ...position, top: "30%", left: 100 }}>Vehicle Model</div>
+      <input type="text" style={{ ...textFieldStyles, top: "34%" }}></input>
+      <div style={{ ...position, top: "40%", left: 130 }}>
+        Registration Number
+      </div>
+      <input type="text" style={{ ...textFieldStyles, top: "44%" }}></input>
+      <div style={{ ...position, top: "50%", left: 88 }}>Post Code</div>
+      <input type="text" style={{ ...textFieldStyles, top: "54%" }}></input>
+      <a style={Button} href="/dashboard">
+        Continue{" "}
+      </a>
     </div>
   );
 }
+
+const Button = {
+  position: "absolute",
+  top: "70%",
+  left: 195,
+  transform: "translate(-50%, -50%)",
+  textDecoration: "none",
+  width: "299px",
+  height: "45px",
+  background: "white",
+  borderRadius: "3px",
+  color: "#035F48",
+  fontSize: "20px",
+  fontWeight: "bold",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  border: "none",
+};

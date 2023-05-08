@@ -99,7 +99,7 @@ const rectangle = {
 const title = {
   fontSize: "45px",
   fontWeight: "bold",
-  top: "38%",
+  top: "36%",
 };
 
 const titles = {
@@ -126,7 +126,7 @@ const LoginButton = {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  top: "61%",
+  top: "63%",
   border: "none",
 };
 
@@ -135,7 +135,7 @@ const registerButton = {
   textDecoration: "none",
   fontSize: "20px",
   fontWeight: "bold",
-  top: "66%",
+  top: "69%",
 };
 
 export default Login;

@@ -17,7 +17,7 @@ function News() {
 const container = {
   color: "white",
   backgroundColor: "black",
-  height: "100vh",
+  height: "95vh",
   width: "100vw",
 };
 
