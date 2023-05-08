@@ -4,6 +4,57 @@ import smalllogo from "../assets/smalllogo.png";
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
+const mapStyles = {
+  position: "absolute",
+  height: "100vh",
+  fontFamily: "Bahnschrift, sans-serif",
+};
+
+const mapContainerStyles = {
+  width: "60%",
+  ...mapStyles,
+  right: 0,
+  bottom: 0,
+};
+
+const sidebarStyles = {
+  backgroundColor: "#035F48",
+  width: "40%",
+  ...mapStyles,
+  left: 0,
+  bottom: 0,
+};
+
+const position = {
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  fontFamily: "Bahnschrift, sans-serif",
+  color: "white",
+  fontSize: "18px",
+};
+
+const logo = {
+  position: "absolute",
+  maxWidth: "250px",
+  top: -55,
+  left: 50,
+};
+
+const textFieldStyles = {
+  ...position,
+  zIndex: 999,
+  color: "white",
+  backgroundColor: "rgb(0,0,0,0)",
+  width: "35vw",
+  border: "none",
+  borderBottom: "2px solid white",
+  transform: "none",
+  top: "28%",
+  left: 20,
+};
+
 export default function Map() {
   const defaultProps = {
     center: {
@@ -15,15 +66,7 @@ export default function Map() {
 
   return (
     <div>
-      <div
-        style={{
-          height: "100vh",
-          width: "60%",
-          position: "absolute",
-          right: 0,
-          bottom: 0,
-        }}
-      >
+      <div style={mapContainerStyles}>
         <GoogleMapReact
           bootstrapURLKeys={{ key: "AIzaSyB-ORs-j8PazFoRXsua6KYn8FeX2xgkrHo" }}
           defaultCenter={defaultProps.center}
@@ -32,26 +75,12 @@ export default function Map() {
           <AnyReactComponent lat={51.5074} lng={-0.1278} text="London" />
         </GoogleMapReact>
       </div>
-      <div
-        style={{
-          height: "100vh",
-          width: "40%",
-          backgroundColor: "#035F48",
-          position: "absolute",
-          left: 0,
-          bottom: 0,
-        }}
-      ></div>
+      <div style={sidebarStyles}></div>
       <a href="/">
         <img src={smalllogo} alt="smalllogo" style={logo} />
       </a>
+      <div style={{ ...position, ...textFieldStyles }}>Message</div>
+      <input type="text" style={textFieldStyles}></input>
     </div>
   );
 }
-
-const logo = {
-  position: "absolute",
-  maxWidth: "250px",
-  top: -55,
-  left: 50,
-};
