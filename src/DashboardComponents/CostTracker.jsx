@@ -7,7 +7,7 @@ function CostTracker() {
   return (
     <div style={container}>
       <div style={pill}></div>
-      <p style={{ ...position, top: "47%", left: "80px" }}>
+      <p style={{ ...position, top: "59px", left: "165px" }}>
         <FontAwesomeIcon
           icon={faMoneyBillTrendUp}
           size="xl"

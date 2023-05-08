@@ -19,7 +19,7 @@ function TopMessage() {
 
 const container = {
   backgroundColor: "#e4e4e4",
-  width: "82vw",
+  width: "83vw",
   height: "15vh",
   fontFamily: "Bahnschrift, sans-serif",
   color: "#035F48",

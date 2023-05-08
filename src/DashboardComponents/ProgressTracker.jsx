@@ -1,12 +1,13 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChartSimple } from "@fortawesome/free-solid-svg-icons";
+import ProgressSteps from "./ProgressSteps";
 
 function ProgressTracker() {
   return (
     <div style={container}>
       <div style={pill}></div>
-      <p style={position}>
+      <p style={{ ...position, top: "59px", left: "180px" }}>
         <FontAwesomeIcon
           icon={faChartSimple}
           size="xl"
@@ -14,14 +15,18 @@ function ProgressTracker() {
         />
         Progress Tracker
       </p>
+      <div>
+        <ProgressSteps />
+      </div>
     </div>
   );
 }
 
 const position = {
   position: "absolute",
-  top: "47px",
-  left: "80px",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
 };
 
 const container = {

@@ -14,6 +14,8 @@ import Advantages from "./HomeComponents/Advantages";
 import NavBar from "./HomeComponents/NavBar";
 import Photos from "./DashboardComponents/Photos";
 import Error from "./OtherComponents/Error";
+import ProgressSteps from "./DashboardComponents/ProgressSteps";
+import Gallery from "./DashboardComponents/Gallery";
 
 function App() {
   return (
@@ -33,6 +35,8 @@ function App() {
         <Route path="/navbar" element={<NavBar />} />
         <Route path="/photos" element={<Photos />} />
         <Route path="/error" element={<Error />} />
+        <Route path="/progresssteps" element={<ProgressSteps />} />
+        <Route path="/gallery" element={<Gallery />} />
       </Routes>
     </>
   );
