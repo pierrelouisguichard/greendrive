@@ -35,8 +35,8 @@ const container = {
 const logo = {
   maxWidth: "250px",
   position: "absolute",
-  top: "-32%",
-  left: "3%",
+  top: -55,
+  left: 50,
 };
 
 const position = {

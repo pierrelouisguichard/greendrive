@@ -15,7 +15,7 @@ function CostTracker() {
         />{" "}
         Cost Tracker
       </p>
-      <div style={position}>
+      <div style={{ ...position }}>
         <GaugeChart />
       </div>
     </div>

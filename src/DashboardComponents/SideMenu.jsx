@@ -18,24 +18,11 @@ function SideMenu() {
             color: "white",
             textDecoration: "none",
           }}
-          href="/error"
+          href="#"
         >
-          - BMW E30
+          Volvo XC40
         </a>
-        <a
-          style={{
-            ...position,
-            top: "40%",
-            fontWeight: "normal",
-            fontSize: "18px",
-            color: "white",
-            textDecoration: "none",
-          }}
-          href="/error"
-        >
-          - Volvo XC40
-        </a>
-        <a style={{ ...position, ...button1 }} href="/error">
+        <a style={{ ...position, ...button1 }} href="/map">
           Convert a New Vehicle
         </a>
         <a style={{ ...position, ...button2 }} href="/">

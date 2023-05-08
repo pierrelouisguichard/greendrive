@@ -1,8 +1,13 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faImages } from "@fortawesome/free-solid-svg-icons";
+import Gallery from "./Gallery";
 
 function Photos() {
+  const handleFileChange = (event) => {
+    const file = event.target.files[0];
+    // do something with the file, like upload it to a server
+  };
   return (
     <div style={container}>
       <div style={pill}></div>
@@ -14,6 +19,13 @@ function Photos() {
         />
         Gallery
       </p>
+      <div style={{ ...position, top: "25%" }}>
+        <Gallery />
+      </div>
+
+      <div style={{ ...position, top: "80%" }}>
+        <input type="file" onChange={handleFileChange} />
+      </div>
     </div>
   );
 }

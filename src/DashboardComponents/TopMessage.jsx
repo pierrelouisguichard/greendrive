@@ -7,7 +7,7 @@ function TopMessage() {
   return (
     <div style={container}>
       <p style={position}>
-        Welcome back, <span style={{ fontWeight: "bold" }}>{name}</span>{" "}
+        Welcome back <span style={{ fontWeight: "bold" }}>{name}</span>{" "}
         <FontAwesomeIcon icon={faLeaf} style={{ color: "#035F48" }} />
       </p>
       <p style={{ ...position, fontSize: "18px", top: "70%" }}>

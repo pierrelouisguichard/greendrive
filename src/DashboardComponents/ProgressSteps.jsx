@@ -21,12 +21,12 @@ const progressBarStyle = {
   transform: "translateY(-50%)",
   width: "150%",
   height: 4,
-  background: "white",
+  background: "#72A599",
 };
 
 const progressBarActiveStyle = {
   ...progressBarStyle,
-  background: "#72A599",
+  background: "white",
   transition: "0.4s ease",
 };
 

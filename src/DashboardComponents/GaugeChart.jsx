@@ -20,17 +20,9 @@ class GaugeChart extends React.Component {
             startAngle: -90,
             endAngle: 90,
             track: {
-              background: "#e7e7e7",
+              background: "white",
               strokeWidth: "97%",
-              margin: 5, // margin is in pixels
-              dropShadow: {
-                enabled: true,
-                top: 2,
-                left: 0,
-                color: "#999",
-                opacity: 1,
-                blur: 2,
-              },
+              margin: 5,
             },
             dataLabels: {
               name: {
@@ -39,6 +31,9 @@ class GaugeChart extends React.Component {
               value: {
                 offsetY: -2,
                 fontSize: "22px",
+                fontFamily: "Bahnschrift, sans-serif",
+                color: "white",
+                fontWeight: "bold",
               },
             },
           },
@@ -48,33 +43,82 @@ class GaugeChart extends React.Component {
             top: -10,
           },
         },
-        fill: {
-          type: "gradient",
-          gradient: {
-            shade: "light",
-            shadeIntensity: 0.4,
-            inverseColors: false,
-            opacityFrom: 1,
-            opacityTo: 1,
-            stops: [0, 50, 53, 91],
-          },
-        },
         labels: ["Average Results"],
+        colors: ["#ffffff"],
       },
+      value: 76,
     };
   }
 
+  handleChange = (event) => {
+    const newValue = parseInt(event.target.value);
+    if (newValue >= 0 && newValue <= 100) {
+      this.setState({ value: newValue });
+    }
+  };
+
+  handleClick = () => {
+    const newSeries = [this.state.value];
+    this.setState({ series: newSeries });
+  };
+
   render() {
+    const { series } = this.state;
+    const percentage = series[0];
+    const spent = Math.round((percentage / 100) * 4000);
     return (
-      <div id="chart">
-        <ReactApexChart
-          options={this.state.options}
-          series={this.state.series}
-          type="radialBar"
-        />
+      <div>
+        <div>
+          <ReactApexChart
+            options={this.state.options}
+            series={this.state.series}
+            type="radialBar"
+          />
+        </div>
+        <div>Estimate: £4000</div>
+        <div>Spent: £{spent}</div>
+        <div>
+          <div>
+            <label htmlFor="value-input">Enter percentage value:</label>
+            <input
+              id="value-input"
+              type="number"
+              min="0"
+              max="100"
+              value={this.state.value}
+              onChange={this.handleChange}
+            />
+          </div>
+          <button style={{ ...position, ...Button }} onClick={this.handleClick}>
+            Change Value
+          </button>
+        </div>
       </div>
     );
   }
 }
+
+const position = {
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+};
+
+const Button = {
+  textDecoration: "none",
+  width: "200px",
+  height: "40px",
+  background: "white",
+  borderRadius: "3px",
+  color: "#035F48",
+  fontSize: "20px",
+  fontWeight: "bold",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  top: "115%",
+  border: "none",
+};
 
 export default GaugeChart;
