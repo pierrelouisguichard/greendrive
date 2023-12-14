@@ -11,6 +11,7 @@ function Dashboard() {
       <div style={{ zIndex: 999 }}>
         <SideMenu />
       </div>
+
       <div style={{ flex: 1 }}>
         <div style={{ zIndex: 1 }}>
           <TopMessage />
