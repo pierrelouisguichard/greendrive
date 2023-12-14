@@ -1,5 +1,5 @@
 import React from "react";
-import smalllogo from "../../assets/smalllogo.png";
+import smogo from "../../assets/smogo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faComments } from "@fortawesome/free-solid-svg-icons";
 
@@ -7,7 +7,7 @@ function SecNav() {
   return (
     <div style={container}>
       <a href="/">
-        <img src={smalllogo} alt="smalllogo" style={logo} />
+        <img src={smogo} alt="smogo" style={logo} />
       </a>
       <p style={position}>
         {" "}

@@ -1,12 +1,12 @@
 import React from "react";
-import smalllogo from "../../assets/smalllogo.png";
+import smogo from "../../assets/smogo.png";
 
 function SideMenu() {
   return (
     <>
       <div style={container}>
         <a href="/">
-          <img src={smalllogo} style={{ ...position, ...logo }} />
+          <img src={smogo} style={{ ...position, ...logo }} />
         </a>
         <p style={{ ...position, top: "30%", left: "4%" }}>Vehicles:</p>
         <a

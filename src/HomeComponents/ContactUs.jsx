@@ -1,10 +1,10 @@
 import React from "react";
-import smalllogo from "../../assets/smalllogo.png";
+import smogo from "../../assets/smogo.png";
 
 function ContactUs() {
   return (
     <div style={container}>
-      <img src={smalllogo} alt="smalllogo" style={{ ...position, ...logo }} />
+      <img src={smogo} alt="smogo" style={{ ...position, ...logo }} />
       <div style={{ ...position, left: "20.5%", top: "28%" }}>
         <b>Our Office</b> <br />
         Office 3A-C2 <br />

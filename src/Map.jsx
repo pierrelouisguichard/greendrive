@@ -1,6 +1,6 @@
 import React from "react";
 import GoogleMapReact from "google-map-react";
-import smalllogo from "../assets/smalllogo.png";
+import smogo from "../assets/smogo.png";
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
@@ -76,7 +76,7 @@ export default function Map() {
       </div>
       <div style={sidebarStyles}></div>
       <a href="/">
-        <img src={smalllogo} alt="smalllogo" style={logo} />
+        <img src={smogo} alt="smogo" style={logo} />
       </a>
       <div style={{ ...position, top: "20%", left: 130 }}>
         Vehicle Manufacturer
